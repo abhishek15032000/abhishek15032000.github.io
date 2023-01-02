@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="icon" href="icons8-sheet-32.png">
+    <link rel="stylesheet" href="style.css">
+ 
+    <script src="script.js"  defer></script>
+    <script src="cycleValidation.js" defer></script>
+    <script src="sheetHandling.js" defer></script>
+    <script src="cellProperties.js" defer></script>
+    <script src="pathTrace.js" defer></script>
+    <script src="formulaEvaluation.js" defer></script>
+    <script src="cutCopyPaste.js" defer></script>
+    <script src="openSave.js" defer></script>
+ 
+     
+    <!--  icons from material icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <!--  icons from material icons -->
+    <title>Transcend</title>
+</head>
+<body>
+      <!--- page actions container-->
+      <div class="page-actions-cont">
+         <div class="page-action">Home</div>
+         <!-- we are adding a default style into this which will let know that this is selected
+
+            (selected-page-action)
+        -->
+         <div class="page-action selected-page-action">File</div>
+         <div class="page-action">Insert</div>
+         <div class="page-action">Layout</div>
+         <div class="page-action">Help</div>
+      </div>
+      <!-- page actions container-->
+
+
+      <!-- cell properties and actions container-->
+      <div class="cellprop-actions-cont">
+
+        <!-- copy icon -->
+        <span class="material-icons copy">
+            content_copy
+        </span>
+        <!-- copy icon -->
+
+
+        <!-- cut icon -->
+        <span class="material-icons cut">
+            content_cut
+        </span>
+        <!-- cut icon-->
+        
+        
+        <!-- paste icon -->
+        <span class="material-icons paste">
+            content_paste
+        </span>
+        <!-- paste icon -->
+        
+        <!-- font family selection -->
+        <select class="font-family-prop">
+            <option value="monospace">Monospace</option>
+            <option value="sans-serif">Sans-serif</option>
+            <option value="fantasy">Fantasy</option>
+            <option value="cursive">Cursive</option>
+        </select>
+        <!--font family selection -->
+
+        <!-- font size selection -->
+           <select class="font-size-prop">
+             <option value="14">14</option>
+             <option value="16">16</option>
+             <option value="18">18</option>
+             <option value="20">20</option>
+           </select>
+        <!-- font size selection-->
+
+        <!-- bold icon -->
+        <span class="material-icons bold">
+            format_bold
+        </span>
+        <!-- bold icon -->
+        
+
+        <!-- italic icon -->
+        <span class="material-icons italic">
+            format_italic
+        </span>
+        <!-- italic icon-->
+
+        
+        <!-- underlined icon -->
+        <span class="material-icons underline">
+            format_underlined
+        </span>
+        <!-- underlined icon -->
+    
+
+        <!-- align left -->
+        <span class=" left material-icons alignment">
+            format_align_left
+        </span>
+        <!-- align left -->
+        
+
+        <!-- align center -->
+        <span class=" center material-icons alignment">
+            format_align_center
+        </span>
+        <!-- aling center -->
+
+
+        <!-- align right -->
+        <span class="right material-icons alignment">
+            format_align_right
+        </span>
+        <!-- align right -->
+        
+        <!-- add colour to the text -->
+        <div class="color-prop">
+            <span class="material-icons">
+                format_color_text
+            </span>
+            <input type="color" class="font-color-prop">
+        </div>
+        <!-- add colour to the text-->
+         
+        <!-- add colour to the background -->
+        <div class="color-prop">
+            <!--
+                 make a parent div in which 
+                 both the color picker as well 
+                 as the icon resides
+
+                 we will be hiding the color picker
+                 input button and make it positioned 
+                 relative to the parent div color-prop 
+            -->
+            <span class="material-icons">
+                format_color_fill
+            </span>
+            <input type="color" class="BGcolor-prop">
+        </div>
+        <!-- add colour to the background -->
+
+
+        <!-- download icon for sheet download-->
+        <span class="material-icons download">
+            download_for_offline
+        </span>
+        <!-- download icon for sheet download-->
+         
+
+        <!-- upload icon for uploading the sheet from your machine-->
+        <span class="material-icons upload">
+            upload
+        </span>
+        <!-- upload icon for uploading the sheet from your machine -->
+      </div>
+      <!--cell properties and actions container-->
+      
+        <!-- formula actions container-->
+        <div class="formula-actions-cont">
+            <input type="text" readonly class="address-bar">
+            <img class="formula-icon"src="https://img.icons8.com/ios/50/null/formula-fx.png"/>
+            <input type="text" class="formula-bar">
+        </div>
+        <!-- formula action container-->
+
+
+      <!-- grid container-->
+      <div class="grid-cont">
+            <div class="top-left-dummy-box"></div>
+            <div class="address-col-cont"></div>
+            <div class="cells-cont">
+                <div class="address-row-cont"></div>
+            </div>
+      </div>
+      <!--grid container -->
+
+
+      <!-- sheet container-->
+      <div class="sheet-actions-cont">
+        <!-- add sheet icon -->
+
+        <div class="sheet-add-icon">
+            <span class="material-icons">
+                post_add
+            </span>
+        </div>
+        <!-- add sheet icon-->
+        
+        <!-- multiple sheets will go here -->
+        <div class="sheets-folder-cont">
+            
+        </div>
+        </div>
+        <!-- multiple sheets will go here-->
+      </div>
+      <!--sheet container-->
+
+    
+
+</body>
+</html>
